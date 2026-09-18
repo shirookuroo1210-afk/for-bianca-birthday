@@ -9,9 +9,9 @@ def heart(a, scale):
     return x, y
 
 for i in range(10000):
-    ang0 = r.uniform(0, 2 * m.pi)
+    a = r.uniform(0, 2 * m.pi)
     sc = r.uniform(0.5, 15.5)
-    x, y = heart(ang0, sc)
+    x, y = heart(a, sc)
 
     ang = m.atan2(y, x) + r.uniform(-0.5, 0.5)
     length = r.uniform(4, 14)
