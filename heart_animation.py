@@ -24,8 +24,8 @@ for i in range(10000):
     if i % 200 == 0: s.update(); time.sleep(0.002)
 
 for i in range(3500):
-    ang0 = r.uniform(0.2, 2 * m.pi)
-    x, y = heart(ang0, 16.0)
+    a = r.uniform(0.2, 2 * m.pi)
+    x, y = heart(a, 16.0)
 
     ang = m.atan2(y, x) + r.uniform(-0.35, 0.35)
     length = r.uniform(10, 32)
